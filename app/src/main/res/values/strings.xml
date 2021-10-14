@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Quizz</string>
+    <!---->
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="registration">Registration</string>
+    <!--    <string name="login">Login</string>-->
+    <!--    <string name="registration">Registration</string>-->
+    <string name="score">Score</string>
+    <string name="restart_quiz">Restart Quiz</string>
+    <string name="login">Login</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="number_of_questions">Number Of Questions</string>
+    <string name="sport">Sport</string>
+    <string name="history">History</string>
+    <string name="science">Science</string>
+    <string name="maths">Maths</string>
+    <string name="question">Question</string>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quiz2"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".quiz2"
+    tools:ignore="ExtraText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/quizbox"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quiz2"
+        app:layout_constraintVertical_bias="0.042"
+        tools:ignore="NotSibling">
+
+        <Button
+            android:id="@+id/option4"
+            android:layout_width="340dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/black_button"
+            android:text="@string/option_4"
+            android:textColor="#F8F3F3"
+            app:backgroundTint="#100F0F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option3" />
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="340dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/black_button"
+            android:text="@string/option_3"
+            android:textColor="#FAF4F4"
+            app:backgroundTint="#1C1C1C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option2" />
+
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="340dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/black_button"
+            android:enabled="true"
+            android:text="@string/option_1"
+            android:textColor="#F6F1F1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="340dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/black_button"
+            android:text="@string/option_2"
+            android:textColor="#F6F5F5"
+            app:backgroundTint="#191818"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/NumberofQue"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:text="@string/number_of_questions"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quizbox"
+        android:layout_below="@+id/NumberofQue"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

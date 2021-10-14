@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quizz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/qqqquiz1_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quizz">
+        <activity android:name=".Incorrect"></activity>
+        <activity android:name=".Correct" />
+        <activity android:name=".Loding3" />
+        <activity android:name=".Loding2" />
+        <activity android:name=".Loding1" />
+        <activity android:name=".Result" />
+        <activity android:name=".Loding" />
+        <activity android:name=".Quiz1" />
+        <activity android:name=".quiz3" />
+        <activity android:name=".quiz2" />
+        <activity android:name=".menu" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Quiz" />
+        <activity android:name=".Login" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
