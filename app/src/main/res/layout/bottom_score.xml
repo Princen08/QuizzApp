@@ -8,6 +8,19 @@
     android:background="@drawable/white_round"
     android:orientation="vertical">
 
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/celebration"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/cele"/>
+
     <TextView
         android:id="@+id/score"
         android:layout_width="match_parent"
@@ -37,6 +50,7 @@
         android:text="Menu"
         android:id="@+id/goback"
         android:background="@drawable/rounded_edittext"/>
+
 
 
 

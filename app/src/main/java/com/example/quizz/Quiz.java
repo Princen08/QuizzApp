@@ -29,6 +29,7 @@ public class Quiz extends AppCompatActivity {
     int curr_score=0;
     int question_attempted=1,currpos;
     private Object LinearLayout;
+    //LottieAnimationView lottieAnimationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -168,6 +169,8 @@ public class Quiz extends AppCompatActivity {
         Button restart=bottomSheetView.findViewById(R.id.restart);
         score_dis.setText("Score :"+ curr_score +"/"+quizlist.size());
         Button menu=bottomSheetView.findViewById(R.id.goback);
+       // lottieAnimationView=findViewById(R.id.celebration);
+        //lottieAnimationView.animate().setDuration(2500).setStartDelay(0);
         restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -178,6 +181,7 @@ public class Quiz extends AppCompatActivity {
                 curr_score=0;
                 question_attempted=1;
                 bottomSheetDialog.dismiss();
+               // lottieAnimationView.cancelAnimation();
             }
         });
         final boolean[] ok = {false};
@@ -186,6 +190,7 @@ public class Quiz extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),menu.class);
                 ok[0] =true;
+               // lottieAnimationView.cancelAnimation();
                 startActivity(intent);
                 finish();
             }

@@ -20,6 +20,7 @@ public class splash extends AppCompatActivity {
 
         lottieAnimationView.animate().translationX(2000).setDuration(2500).setStartDelay(2500);
 
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

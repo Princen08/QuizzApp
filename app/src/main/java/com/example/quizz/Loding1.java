@@ -19,7 +19,7 @@ public class Loding1 extends AppCompatActivity {
             getSupportActionBar().hide();}
         lottieAnimationView=findViewById(R.id.loding1);
 
-        lottieAnimationView.animate().setDuration(2500).setStartDelay(2500);
+        lottieAnimationView.animate().translationX(2000).setDuration(2500).setStartDelay(2500);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
